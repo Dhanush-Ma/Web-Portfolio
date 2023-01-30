@@ -24,20 +24,19 @@ const Contact = () => {
   }
 
   useEffect(() => {
+    function checkForErrors() {
+      if (
+        validator.isEmail(formData.email) &&
+        formData.name &&
+        formData.message
+      ) {
+        setValidData(true);
+      } else {
+        setValidData(false);
+      }
+    }
     checkForErrors();
   }, [formData]);
-
-  function checkForErrors() {
-    if (
-      validator.isEmail(formData.email) &&
-      formData.name &&
-      formData.message
-    ) {
-      setValidData(true);
-    } else {
-      setValidData(false);
-    }
-  }
 
   function handleSubmit(e) {
     e.preventDefault();
