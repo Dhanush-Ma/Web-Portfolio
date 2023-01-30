@@ -1,0 +1,119 @@
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    margin: 0 auto;
+    width: 90%;
+    height: 100px;
+}
+
+.navbar svg{
+    width: 250px;
+}
+.logo{
+    order: 2;
+}
+
+.logo:hover:after{
+    width: 0;
+    left:50%
+}
+
+.navbar a{
+    text-decoration: none;
+    color: var(--green);
+    font-weight: 600;
+    padding: 5px 0px;
+    position: relative;
+}
+
+.navbar a:after {    
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: var(--green);
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+.navbar .about:hover:after,
+.navbar .projects:hover:after,
+.navbar .skills:hover:after,
+.navbar .contact:hover:after { 
+  width: 100%; 
+  left: 0; 
+}
+
+.navbar li{
+    list-style-type: none;
+}
+
+.about{
+    order: 0;
+}
+
+.projects{
+    order: 1;
+}
+
+.contact{
+    order: 4;
+}
+
+.skills{
+    order: 3;
+}
+
+.menuIcons i{
+    display: none;
+    color: var(--green);
+}
+
+.navLinks{
+        display: none;
+    }
+
+@media only screen and (max-width:690px){
+    .about,.projects,.skills,.contact{
+        display: none;
+    }
+    .menuIcons i{
+        display: block;
+        font-size: 2rem;
+    }
+
+    .logo{
+        order: 0;
+    }
+
+    .navbar{
+        justify-content: space-between;
+        position: relative;
+    }
+    
+    .navLinks{
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: max-content;
+        padding: 2rem;
+        background-color: var(--light-blue);
+        top: 100px;
+        z-index: 2;
+        transition: all 3s ease;
+    }
+
+    .navLinks a{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 1rem;
+        transition: all 3s ease;
+    }
+
+}

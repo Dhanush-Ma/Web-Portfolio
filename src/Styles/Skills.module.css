@@ -1,0 +1,34 @@
+.skills{
+    min-height: 100vh;
+    width: 95%;
+    margin: 0 auto;
+}
+
+.skills h2{
+    text-align: center;
+    margin: 1rem 0 0rem 0;
+}
+
+.skillContainer{
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    row-gap: 1.5rem;
+    column-gap: 1.5rem;
+    padding: 2rem 0;
+    margin-bottom: 5rem;
+}
+
+.heading{
+    font-family: 'Style Script';
+    font-size: 3rem;
+    text-align: center;
+}
+
+@media only screen and (max-width: 845px){
+.skillContainer{
+    grid-template-columns: repeat(2,1fr);
+    padding: 1rem;
+
+}
+}

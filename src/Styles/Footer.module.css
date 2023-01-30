@@ -1,0 +1,67 @@
+footer{
+    background-color: #100E09;
+    width: 100%;
+}
+
+footer > div{
+    width: 95%;
+    margin: 0 auto;
+    padding: 3rem 0;
+}
+
+.footerText{
+    text-align: center;
+    vertical-align: middle;
+}
+
+.logo{
+    width: 200px;
+}
+
+.heart{
+    color: red;
+    font-size: 1.3rem;
+    margin: 0 0.3rem;
+
+}
+
+.logo svg{
+    max-width: 50vw;
+
+}
+
+.rotate{
+    font-size: 1.3rem;
+    animation: rotation 2s infinite linear;
+    margin: 0 0.3rem;
+}
+
+.footerContainer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.links a{
+    margin-left: 2rem;
+    font-size: 3rem;
+    color: var(--green);
+}
+
+.footerText{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+    color: var(--white);
+}
+
+@keyframes rotation {
+    from{
+        transform: rotate(0deg);
+    }
+
+    to{
+        transform: rotate(360deg);
+    }
+}

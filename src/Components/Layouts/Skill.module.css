@@ -1,0 +1,49 @@
+.individualSkill{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #2f2f2f;
+    padding: 0.5rem;
+    /* From https://css.glass */
+background: rgba(255, 255, 255, 0);
+border-radius: 16px;
+box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(2.8px);
+-webkit-backdrop-filter: blur(2.8px);
+border: 1px solid rgba(255, 255, 255, 0.6);
+padding-bottom: 1rem;
+}
+
+.individualSkill i{
+    font-size: 5rem;
+}
+
+.individualSkill h3{
+    font-size: 1rem;
+    text-align: center;
+    margin-bottom: 0.5rem;
+    font-weight: 300;    
+}
+
+.individualSkill p{
+    display: flex;
+    height: 50px;
+    width: 50px;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid var(--pink);
+    border-radius: 50%;
+    padding: 1rem;
+    color: var(--light-blue);
+  
+}
+
+
+.skillWithPercent{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+

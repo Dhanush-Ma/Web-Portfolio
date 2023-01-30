@@ -1,0 +1,29 @@
+.quoteBg{
+    background-color: var(--green);
+    padding: 4rem;
+    margin-bottom: 3rem;
+}
+
+.quote{
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 2rem;
+}
+
+.quote i{
+    font-size: 2rem;
+    color: var(--pink);
+    display: inline-block;
+}
+
+.quote p{
+    display: inline;
+    z-index: 2;
+    font-weight: bold;
+    color: var(--dark-blue);
+}
+

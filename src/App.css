@@ -1,0 +1,9 @@
+body{
+    background-color: var(--white);
+    background-size: contain;
+}
+
+.container{
+    max-width: 1000px;
+    margin: 0 auto;
+}

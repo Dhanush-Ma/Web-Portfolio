@@ -1,0 +1,27 @@
+*{
+  box-sizing: border-box;
+      margin: 0;
+padding: 0;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: 'Poppins', 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+:root{
+  --white: #F6EBF4;
+  --green: #4cbfa6;
+  --dark-blue: #482673;
+  --light-blue: #023b59;
+  --pink: #ed0b70;
+}
