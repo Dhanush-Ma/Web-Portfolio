@@ -1,4 +1,3 @@
-import { useState } from "react";
 import styles from "../Layouts/Project.module.css";
 
 const Project = (props) => {
