@@ -14,7 +14,7 @@ const Projects = () => {
   function myArrow({ type, onClick, isEdge }) {
     const pointer = type === consts.PREV ? "" : "";
     return (
-      <button onClick={onClick} disabled={isEdge}>
+      <button style={{display: "none"}} onClick={onClick} disabled={isEdge}>
         {pointer}
       </button>
     );
