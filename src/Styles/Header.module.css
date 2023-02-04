@@ -1,7 +1,10 @@
 header{
-    min-height: 100vh;
+    min-height: calc(100vh - 100px);
     z-index: 1000;
     transition: all 300ms ease-in-out;
+    display: grid;
+    place-items: center;
+    margin-bottom: 2rem;
 }
 
 .heroLogo{
