@@ -31,7 +31,7 @@ const Project = (props) => {
         )`,
       });
 
-      if (progressValue == finalValue) clearInterval(progress);
+      if (progressValue === finalValue) clearInterval(progress);
     }, speed);
   }
 

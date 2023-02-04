@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import styles from "../Styles/Skills.module.css";
 import { skills } from "../data/skills";
 import Skill from "./Layouts/Skill";
