@@ -1,8 +1,12 @@
 import styles from "../Layouts/Project.module.css";
 
+
 const Project = (props) => {
   return (
-    <div className={styles.individualProject}>
+    <div
+      className={styles.individualProject}
+
+    >
       <div className={`${styles.img}`}>
         <img src={`${props.img}`} alt={props.title}></img>
       </div>

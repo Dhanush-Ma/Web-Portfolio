@@ -1,7 +1,8 @@
 .quoteBg{
     background-color: var(--green);
     padding: 4rem;
-    margin-bottom: 3rem;
+    margin-bottom: 4rem;
+    font-family: 'Tulpen One';
 }
 
 .quote{
@@ -18,12 +19,17 @@
     font-size: 2rem;
     color: var(--pink);
     display: inline-block;
+    margin-right: 1rem;
 }
+
 
 .quote p{
     display: inline;
     z-index: 2;
     font-weight: bold;
     color: var(--dark-blue);
+    font-size: 2rem;
+    letter-spacing: 2px;
+
 }
 

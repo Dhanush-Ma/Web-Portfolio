@@ -1,11 +1,20 @@
 import React from "react";
 import styles from "../Styles/About.module.css";
 import logo from "../assets/coder2.png";
+import pageAnimate from "../animation";
+import { motion } from "framer-motion";
 
 const About = () => {
   return (
     <div className="container">
-      <section id="about" className={styles.about}>
+      <motion.section
+        initial={"offScreen"}
+        whileInView={"onScreen"}
+        variants={pageAnimate}
+        viewport={{ once: false, amount: 0.2 }}
+        id="about"
+        className={styles.about}
+      >
         <h2 className={styles.heading}>about Me</h2>
         <div className={styles.aboutContainer}>
           <div>
@@ -21,14 +30,20 @@ const About = () => {
               planning on to learn Mobile Development in the near feature. And
               yes Googling is one of my top Skills.
             </p>
-            <p>Done an Internship for 2 weeks at Puducherry Technological University as a team member in Controller of Examinations.</p>
-            <p className={styles.current}>Currently I am Learning React Native</p>
+            <p>
+              Done an Internship for 2 weeks at Puducherry Technological
+              University as a team member in Controller of Examinations.
+            </p>
+            <p className={styles.current}>
+              Currently I am Learning{" "}
+              <span style={{ color: "#7cc5d9" }}>React Native</span>
+            </p>
           </div>
           <div className={styles.imgHolder}>
             <img src={logo} alt="Dhanush Mahesh" />
           </div>
         </div>
-      </section>
+      </motion.section>
     </div>
   );
 };

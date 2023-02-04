@@ -3,13 +3,22 @@ import Navbar from "./Navbar";
 import logo from "../assets/coder-logo.png";
 import styles from "../Styles/Header.module.css";
 import Typewriter from "typewriter-effect";
+import { motion } from "framer-motion";
 
 const Header = () => {
   const [nameDesign, setNameDesign] = useState(false);
   return (
     <>
       <Navbar />
-      <header id="header">
+      <motion.header id="header" initial="pageInitail" animate="pageAnimate"
+      variants={{
+        pageInitail:{
+          opacity: 0
+        },
+        pageAnimate:{
+          opacity: 1
+        }
+      }} >
         <div className="container">
           <div className={styles.hero}>
             <div className={styles.textInfo}>
@@ -23,29 +32,31 @@ const Header = () => {
                   Dhanush
                 </span>
               </h1>
-              <Typewriter
-                className={styles.dynamicText}
-                options={{
-                  loop: true,
-                  autoStart: true,
-                }}
-                onInit={(typewriter) => {
-                  typewriter
-                    .typeString("Web Developer")
-                    .pauseFor(1000)
-                    .deleteAll()
-                    .typeString("Web Designer")
-                    .pauseFor(1000)
-                    .deleteAll()
-                    .typeString("MERN Stack Developer")
-                    .pauseFor(1000)
-                    .deleteAll()
-                    .typeString("Writer")
-                    .pauseFor(1000)
-                    .deleteAll()
-                    .start();
-                }}
-              />
+              <div className={styles.dynamicText}>
+                <Typewriter
+                  className={styles.dynamicText}
+                  options={{
+                    loop: true,
+                    autoStart: true,
+                  }}
+                  onInit={(typewriter) => {
+                    typewriter
+                      .typeString("Web Developer")
+                      .pauseFor(1000)
+                      .deleteAll()
+                      .typeString("Web Designer")
+                      .pauseFor(1000)
+                      .deleteAll()
+                      .typeString("MERN Stack Developer")
+                      .pauseFor(1000)
+                      .deleteAll()
+                      .typeString("Writer")
+                      .pauseFor(1000)
+                      .deleteAll()
+                      .start();
+                  }}
+                />
+              </div>
               <p>
                 A passionate self taught developer who had done some hands on
                 real time projects. Looking forward to catch up with you!{" "}
@@ -86,7 +97,7 @@ const Header = () => {
             </div>
           </div>
         </div>
-      </header>
+      </motion.header>
     </>
   );
 };

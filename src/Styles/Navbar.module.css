@@ -10,8 +10,6 @@
 
 .navbar svg{
     width: 250px;
-}
-.logo{
     order: 2;
 }
 
@@ -28,18 +26,7 @@
     position: relative;
 }
 
-.navbar a:after {    
-  background: none repeat scroll 0 0 transparent;
-  bottom: 0;
-  content: "";
-  display: block;
-  height: 2px;
-  left: 50%;
-  position: absolute;
-  background: var(--green);
-  transition: width 0.3s ease 0s, left 0.3s ease 0s;
-  width: 0;
-}
+/*  */
 .navbar .about:hover:after,
 .navbar .projects:hover:after,
 .navbar .skills:hover:after,
@@ -47,6 +34,7 @@
   width: 100%; 
   left: 0; 
 }
+
 
 .navbar li{
     list-style-type: none;
@@ -86,8 +74,9 @@
         font-size: 2rem;
     }
 
-    .logo{
+    .navbar svg{
         order: 0;
+        width: 200px;
     }
 
     .navbar{
@@ -104,7 +93,7 @@
         background-color: var(--light-blue);
         top: 100px;
         z-index: 2;
-        transition: all 3s ease;
+        transition: all 0.2s ease;
     }
 
     .navLinks a{
@@ -113,7 +102,7 @@
         justify-content: center;
         align-items: center;
         margin-bottom: 1rem;
-        transition: all 3s ease;
+        transition: all 0.3s ease;
     }
 
 }
