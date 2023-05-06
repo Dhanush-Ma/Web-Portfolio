@@ -61,12 +61,18 @@ export const skills = [
   },
   {
     id: 11,
+    name: "Raect Native",
+    percent: 70,
+    link: `devicon-react-plain colored`,
+  },
+  {
+    id: 12,
     name: "Figma",
     percent: 60,
     link: `devicon-figma-plain colored`,
   },
   {
-    id: 12,
+    id: 13,
     name: "VS Code",
     percent: 80,
     link: `devicon-vscode-plain colored`,

@@ -10,15 +10,19 @@ const Header = () => {
   return (
     <>
       <Navbar />
-      <motion.header id="header" initial="pageInitail" animate="pageAnimate"
-      variants={{
-        pageInitail:{
-          opacity: 0
-        },
-        pageAnimate:{
-          opacity: 1
-        }
-      }} >
+      <motion.header
+        id="header"
+        initial="pageInitail"
+        animate="pageAnimate"
+        variants={{
+          pageInitail: {
+            opacity: 0,
+          },
+          pageAnimate: {
+            opacity: 1,
+          },
+        }}
+      >
         <div className="container">
           <div className={styles.hero}>
             <div className={styles.textInfo}>
@@ -64,7 +68,7 @@ const Header = () => {
 
               <a
                 className={styles.resume}
-                href="https://drive.google.com/file/d/1Kzigl7z24ICGIq6l1FMnExukfIpwrPfC/view?usp=share_link"
+                href="https://drive.google.com/file/d/1OI5JwV5oRExmaDEqFiTEjEJmykOrfx4G/view?usp=sharing"
                 target="_blank"
                 rel="noreferrer"
                 download="Dhanush-Resume.pdf"

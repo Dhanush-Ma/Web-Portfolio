@@ -35,8 +35,25 @@ const About = () => {
               University as a team member in Controller of Examinations.
             </p>
             <p className={styles.current}>
-              Currently I am Learning{" "}
-              <span style={{ color: "#7cc5d9" }}>React Native</span>
+              Currently I am Learning
+              <br />
+              <div className={styles.currentContainer}>
+                <span style={{ color: "#0f0f0f" }}>
+                  NextJS
+                  <i
+                    style={{ fontSize: "40px", marginLeft: "10px" }}
+                    class="devicon-nextjs-original colored"
+                  ></i>{" "}
+                </span>
+                &{" "}
+                <span style={{ color: "#0db7ed" }}>
+                  Docker
+                  <i
+                    style={{ fontSize: "40px", marginLeft: "10px" }}
+                    class="devicon-docker-plain colored"
+                  ></i>
+                </span>
+              </div>
             </p>
           </div>
           <div className={styles.imgHolder}>
