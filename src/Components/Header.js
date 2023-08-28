@@ -68,7 +68,7 @@ const Header = () => {
 
               <a
                 className={styles.resume}
-                href="https://drive.google.com/file/d/1OI5JwV5oRExmaDEqFiTEjEJmykOrfx4G/view?usp=sharing"
+                href="https://drive.google.com/file/d/1kNyfmT1tFmFpoAXZsSKth4GHRDyD8QoE/view?usp=drive_link"
                 target="_blank"
                 rel="noreferrer"
                 download="Dhanush-Resume.pdf"
