@@ -1,17 +1,20 @@
-import './App.css';
-import Header from './Components/Header'
-import Quote from './Components/Quote'
-import About from './Components/About';
+import "./App.css";
+import Header from "./Components/Header";
+import Quote from "./Components/Quote";
+import About from "./Components/About";
 import Skills from "./Components/Skills";
 import Projects from "./Components/Projects";
 import Contact from "./Components/Contact";
 import Footer from "./Components/Footer";
-import { Navigate } from "react-router-dom";
+import { useEffect } from "react";
 
 function App() {
+  useEffect(() => {
+    window.location.replace("https://dhanush.io");
+  }, []);
 
-  return <Navigate to="https://dhanush.io/" replace />;
-  
+  return null;
+
   return (
     <>
       <Header />
