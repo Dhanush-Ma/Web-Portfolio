@@ -6,8 +6,12 @@ import Skills from "./Components/Skills";
 import Projects from "./Components/Projects";
 import Contact from "./Components/Contact";
 import Footer from "./Components/Footer";
+import { Navigate } from "react-router-dom";
 
 function App() {
+
+  return <Navigate to="https://dhanush.io/" replace />;
+  
   return (
     <>
       <Header />
